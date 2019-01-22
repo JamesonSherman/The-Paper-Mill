@@ -2,14 +2,15 @@ body{
     background: black;
 }
 img {
+  object-fit: scale-down;
     width: 30%;
-    height:50%;
+    height: 50%;
     float: left;
     margin: 1.66%;
     overflow: hidden;
 }
 #name {
-    font-family: Staatliches;
+    font-family: "Fugaz One";
     margin: 1.66%;
     font-size: 50px;
     font-weight: 800;
@@ -17,6 +18,20 @@ img {
     border-bottom: 3px solid #f1f1f1;
     width: 30%;
     padding-bottom: 20px;
+}
+
+#specialcase {
+width:294;
+height: 165;
+}
+
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .rainbow {
@@ -35,6 +50,7 @@ img {
    /* Standar Syntax */
    animation: rainbow 3s infinite; 
  }
+
  
  /* Chrome, Safari, Opera */
  @-webkit-keyframes rainbow{
